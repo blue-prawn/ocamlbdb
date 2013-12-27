@@ -1,0 +1,7 @@
+name = "ocamlbdb"
+description = "Berkeley DB bindings"
+
+archive(byte) = "bdb.cma"
+archive(native) = "bdb.cmxa"
+archive(plugin, byte) = "bdb.cma"
+archive(plugin, native) = "bdb.cmxs"

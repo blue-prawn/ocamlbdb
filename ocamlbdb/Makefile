@@ -1,6 +1,8 @@
 ##############################################################################
 OCAMLC = ocamlc
 OCAMLOPT = ocamlopt
+OCAMLFIND = ocamlfind
+LIBDIR = bdb
 
 OCAML_LIBS = $(shell $(OCAMLC) -where)
 
@@ -74,3 +76,10 @@ clean2:
 	$(RM) test test.cm* test.o
 
 depend::
+
+##############################################################################
+# Find
+##############################################################################
+findinstall:
+	$(OCAMLFIND) install $(LIBDIR) META *.a *.cm[iatx] *.cmx[as]
+
