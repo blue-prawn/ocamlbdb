@@ -1,1 +1,0 @@
-add some target in Makefile such as all.opt
